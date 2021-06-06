@@ -62,7 +62,7 @@ def main():
         mappable_normal = im_normal.get_children()[0]
         fig.subplots_adjust(bottom=-0.01)
         plt.colorbar(mappable_normal, ax=ax[:], orientation='horizontal', cmap="Greens", pad=0.102)
-        plt.savefig(savePath + '.png', dpi=92)
+        plt.savefig(savePath + '.png', dpi=92, bbox_inches='tight')
 
 
 def getDiffMatrix(m1, m2):
