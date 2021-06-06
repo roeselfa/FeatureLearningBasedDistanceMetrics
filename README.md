@@ -77,13 +77,13 @@ A graphic, similar to the ones displayed in the paper. Be advised that spacings 
 
 ~\EventLogs\
             logName1\
-                     "logName1_t[xx]_k[xx]_[mode].csv"               [mode] is the PRETSA instance used to sanitize the log, e.g. "Levenshtein", or "FDM"
-                     "logName1_t[xx]_k[xx]_[mode].csv"
-                     "logName1_t[xx]_k[xx]_[mode].csv"
+                     "logName1_t[xx]\_k[xx]\_[mode].csv"               [mode] is the PRETSA instance used to sanitize the log, e.g. "Levenshtein", or "FDM"
+                     "logName1_t[xx]\_k[xx]\_[mode].csv"
+                     "logName1_t[xx]\_k[xx]\_[mode].csv"
             logName2\
-                     "logName2_t[xx]_k[xx]_[mode].csv"
-                     "logName2_t[xx]_k[xx]_[mode].csv"
-                     "logName2_t[xx]_k[xx]_[mode].csv"
+                     "logName2_t[xx]\_k[xx]\_[mode].csv"
+                     "logName2_t[xx]\_k[xx]\_[mode].csv"
+                     "logName2_t[xx]\_k[xx]\_[mode].csv"
             
 
 ## Contact
