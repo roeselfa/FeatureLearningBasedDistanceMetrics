@@ -34,38 +34,57 @@ Event Logs are mostly available as .xes and can easily be converted to .csv i.e.
 The scripts used for the creation of the figures used throughout the paper can be found in the directory "Evaluation"
 
 ```python
-advancedBehavioralAppropriateness.py
+callAdvancedBA.py
 ```
-calculates the Advanced Behavioral Appropriateness Score for a given event log in relation to the other given event log.\
+calculates and displays the Advanced Behavioral Appropriateness Score for a given set of event logs.\
 Input:
-1) path to the first event log (original log) (.csv)
-2) path to the second event log (sanitized log) (.csv)
+1) path to the directory where the event logs are located (.csv) *
+2) path to the directory to save the output graphic in
 
-Output: Score s; 0 <= s <= 1
+Output: 
+A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
 
 ```python
-totalDurationError.py
+callCheckSampleQuality.py
 ```
-calculates the Total Duration Error for a given event log in relation to the other given event log.\
+calculates and displays the Truly Sampled Score for a given set of event logs.\
 Input:
-1) path to the first event log (original log) (.csv)
-2) path to the second event log (sanitized log) (.csv)
+1) path to the directory where the event logs are located (.csv) *
+2) path to the directory to save the output graphic in
 
-Output: Error e; 0 <= e <= 100
+Output: 
+A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
 
-```python
-check_sample_quality.py
-```
-among other scores, calculates the Truly Sampled Score for a given event log in relation to the other given event log.\
-Input:
-1) path to the first event log (original log) (.csv)
-2) path to the second event log (sanitized log) (.csv)
-
-Output: Truly Sampled Score s; 0 <= s <= 1\
 For an explanation of the score, please refer to 
 
 "Measuring the Behavioral Quality of Log Sampling",\
 Bram Knols and Jan Martijn E. M. van der WerfDepartment of Information and Computing Sciences   Utrecht University
+
+
+```python
+traceDurationError.py
+```
+calculates and displays the Total Duration Error for a given set of event logs.\
+Input:
+1) path to the directory where the event logs are located (.csv) *
+2) path to the directory to save the output graphic in
+
+Output: 
+A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
+
+
+* We recommed the following file structure, otherwise you will have to adjust the Evaluation code to fit your setup
+
+~\EventLogs\
+            logName1\
+                     "logName1_t[xx]_k[xx]_[mode].csv"               [mode] is the PRETSA instance used to sanitize the log, e.g. "Levenshtein", or "FDM"
+                     "logName1_t[xx]_k[xx]_[mode].csv"
+                     "logName1_t[xx]_k[xx]_[mode].csv"
+            logName2\
+                     "logName2_t[xx]_k[xx]_[mode].csv"
+                     "logName2_t[xx]_k[xx]_[mode].csv"
+                     "logName2_t[xx]_k[xx]_[mode].csv"
+            
 
 ## Contact
 fabian.roesel@hu-berlin.de
