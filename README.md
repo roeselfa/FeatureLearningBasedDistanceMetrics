@@ -42,6 +42,7 @@ Input:
 2) path to the directory to save the output graphic in
 
 Output: 
+
 A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
 
 ```python
@@ -53,12 +54,13 @@ Input:
 2) path to the directory to save the output graphic in
 
 Output: 
+
 A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
 
 For an explanation of the score, please refer to 
 
 "Measuring the Behavioral Quality of Log Sampling",\
-Bram Knols and Jan Martijn E. M. van der WerfDepartment of Information and Computing Sciences   Utrecht University
+Bram Knols and Jan Martijn E. M. van der Werf, Department of Information and Computing Sciences   Utrecht University
 
 
 ```python
@@ -70,6 +72,7 @@ Input:
 2) path to the directory to save the output graphic in
 
 Output: 
+
 A graphic, similar to the ones displayed in the paper. Be advised that spacings and paddings are optimised for comparison of 2 modes for 3 event logs. Should you wish to change this setup you might have to adjust accordingly.
 
 
